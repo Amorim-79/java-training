@@ -1,0 +1,22 @@
+
+public class repetitionLoops {
+	public static void main(String[] args) {
+		int countWhile = 0;
+		
+		while (countWhile <= 10) {
+			System.out.println("Contador do While: " + countWhile);
+			countWhile++;
+		}
+		
+		for (int count = 0; count <= 10; count++) {
+			System.out.println("For simples, contador do For: " + count);
+		}
+		
+		for (int multiplicador = 1; multiplicador <= 10; multiplicador++) {
+			for (int number = 1; number <= 10; number++) {
+				System.out.println(number + " * " + multiplicador + " = " + number * multiplicador);
+			}
+			System.out.println();
+		}
+	}
+}

@@ -1,0 +1,21 @@
+
+public class variables {
+	public static void main(String[] args) {
+		// Declarando os tipo de variaveis
+		int numero = 1; // Armazena números inteiros de até 32bits
+		long numeroGrande = 955252L; // Semelhante ao int porém armazena até 64bits
+		float pi = 3.14f; // Armazena números com ponto flutuante 
+		double salario = 2500.50;
+		boolean booleano = false;
+		char letra = 'A';
+		String frase = "Eu sou uma String";
+		
+		System.out.println(numero);
+		System.out.println(numeroGrande);
+		System.out.println(pi);
+		System.out.println(salario);
+		System.out.println(booleano);
+		System.out.println(letra);
+		System.out.println(frase);
+	}
+}
