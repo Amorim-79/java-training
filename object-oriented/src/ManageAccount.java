@@ -1,5 +1,5 @@
 
-public class manageAccount {
+public class ManageAccount {
 	public static void main(String[] args) {
 		// Conta 1
 		Account account1 = new Account(129, 5438);
