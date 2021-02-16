@@ -1,5 +1,5 @@
 
-public class CurrentAccount extends Account {
+public class CurrentAccount extends Account implements Taxable {
 	
 	private int code = 1;
 	
@@ -16,5 +16,10 @@ public class CurrentAccount extends Account {
 	public boolean withdraw(double value) {
 		double fee = 0.10;
 		return super.withdraw(value + fee);
+	}
+
+	@Override
+	public double getTaxValue() {
+		return super.getBalance() * 0.01;
 	}
 }

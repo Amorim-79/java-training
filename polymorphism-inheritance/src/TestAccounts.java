@@ -17,11 +17,21 @@ public class TestAccounts {
 		cc.deposity(500.40);
 		cc.transfer(125.40, sa);
 		
+		//Instânciando seguro de vida
+		LifeInsurance insurance = new LifeInsurance();
+		
+		//Intânciado e utilizando a classe responsável por calcular o total de impostos
+		CalculateTax calculate = new CalculateTax();
+		calculate.register(cc);
+		calculate.register(insurance);
+		
 		// Resultados
 		System.out.println("O titular da Conta: " + cc.getCode() + "." + cc.getAgency() + "." + cc.getNumber() + " é: " + cc.getOwner().getName());
 		System.out.println("O titular da Conta: " + sa.getCode() + "." + sa.getAgency() + "." + sa.getNumber() + " é: " + sa.getOwner().getName());
 		
 		System.out.println("O saldo da Conta: " + cc.getCode() + "." + cc.getAgency() + "." + cc.getNumber() + " é: " + cc.getBalance());
 		System.out.println("O saldo da Conta: " + sa.getCode() + "." + sa.getAgency() + "." + sa.getNumber() + " é: " + sa.getBalance());
+		
+		System.out.println("O imposto da Conta: " + cc.getCode() + "." + cc.getAgency() + "." + cc.getNumber() + " é: " + calculate.getTotal());
 	}
 }
