@@ -1,14 +1,14 @@
 
 public class CurrentAccount extends Account implements Taxable {
 	
-	private int code = 1;
+	String code = AccountsCode.CURRENT.getValue();
 	
 	public CurrentAccount(int agency, int number) {
 		super(agency, number);
 	}
 	
 	@Override
-	public int getCode() {
+	public String getCode() {
 		return this.code;
 	}
 	

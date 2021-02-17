@@ -14,7 +14,7 @@ public abstract class Account {
 	}
 	
 	// Métodos abstratos não possui corpo, as classes filhas são obrigadas a implementá-lo
-	public abstract int getCode();
+	public abstract String getCode();
 	
 	public void deposity(double value) {
 		this.balance += value;

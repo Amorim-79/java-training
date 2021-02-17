@@ -1,14 +1,14 @@
 
 public class SavingsAccount extends Account {
 
-	private int code = 13;
+	String code = AccountsCode.SAVING.getValue();
 	
 	public SavingsAccount(int agency, int number) {
 		super(agency, number);
 	}
 	
 	@Override
-	public int getCode() {
+	public String getCode() {
 		return this.code;
 	}
 }
